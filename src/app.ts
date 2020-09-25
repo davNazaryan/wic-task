@@ -16,7 +16,7 @@ app.use(cors());
 // Showing stack errors
 app.set('showStackError', true);
 
-// getData endpoint
+/* Controllers here */
 app.get('/get_data/:searchStr?', controller);
 
 // Use helmet to secure Express headers
@@ -29,7 +29,8 @@ app.use((err, req, res, next) => {
         next(err);
     }
 });
-app.use((req, res, next) => { // 404 route
+/* 404 route */
+app.use((req, res, next) => {
     res.status(404).end();
 });
 
