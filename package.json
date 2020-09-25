@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "npm run build && concurrently --kill-others \"tsc -w\" \"nodemon dist/server.js -e ts\"",
     "build": "tsc",
-    "build:docker": "docker build -t dn-wic-task",
     "start": "node dist/server.js",
     "start:prod": "export NODE_ENV=prod|| set NODE_ENV=prod&& npm start",
     "test": "mocha -r ts-node/register tests/**/*.spec.ts",

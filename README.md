@@ -40,7 +40,7 @@ __Add env variables described in `.env.example` file__
 1. Download and install Docker
 2. Build docker image
 	```bash
-		$ npm run build:docker
+		$ docker build --tag dn-wic-task .
 	```
 3. Run docker container
 	- Command
