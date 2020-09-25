@@ -1,7 +1,7 @@
 import chai from "chai"
 import getData from "../src/getData"
 
-process.env.API = 'https://jsonplaceholder.typicode.com';
+process.env.NODE_ENV = 'test';
 
 /* interface FilteredUsers {
     name: string,

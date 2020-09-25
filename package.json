@@ -8,6 +8,7 @@
     "build": "tsc",
     "build:docker": "docker build -t dn-wic-task",
     "start": "node dist/server.js",
+    "start:prod": "export NODE_ENV=prod|| set NODE_ENV=prod&& npm start",
     "test": "mocha -r ts-node/register tests/**/*.spec.ts",
     "coverage": "nyc -r lcov -e .ts -x \"*.spec.ts\" npm run test",
 
