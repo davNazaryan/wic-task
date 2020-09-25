@@ -1,0 +1,42 @@
+const emptySearchStrResponse = {
+  companies: [ // only companies that have 3 {"completed": true} todo
+    { name: 'company 1' },
+    ...
+    { name: 'company n' }
+  ],
+  users: [ // only users that have at least 2 post each one with at least 3 comments.
+    {
+      name: 'User 1',
+      email: 'user1@example.com',
+      todoCount: 30
+    },
+    ...
+    {
+      name: 'User n',
+      email: 'usern@example.com',
+      todoCount: 33
+    }
+  ],
+};
+
+const response = {
+  companies_for_question_1: [
+    { name: 'company 1' },
+    ...
+  ],
+  users_for_question_2: [
+    {
+      name: 'User 1',
+      email: 'user1@example.com',
+    },
+    ...
+  ],
+
+  users_for_question_3: [   // all users should be here
+    {
+      name: 'User 1',
+      todoCount: 33
+    },
+    ...
+  ],
+};
